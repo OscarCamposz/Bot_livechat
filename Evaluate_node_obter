@@ -1,0 +1,12 @@
+//Codigo en javascript para obtener el valor del Key llamado Company  del JSON body que trajo un HTTP Request
+
+function getLastCompany(json) {
+    var data = JSON.parse(json);
+    var lastCompany = data[data.length - 1].company;
+    return lastCompany;
+}
+
+var json = datasr;
+
+var lastCompany = getLastCompany(json);
+1;
